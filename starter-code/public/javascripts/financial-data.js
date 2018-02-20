@@ -7,16 +7,13 @@ window.onload = function() {
 }
 
 const axiosCall = (my_url) => {
-axios({
-    method: "GET",
-    url: my_url, 
-  })
-  .then(response => {
-    return response.bpi
-  })
-  .catch(err => {
-    err ? console.log(err)
-  })
+  axios.get(my_url)
+    .then(response => {
+      return response.bpi
+    })
+    .catch(err => {
+      err ? console.log(err)
+    })
 }
  const configData = (obj) => {
   const {keys, values} = Object.entries(obj)
