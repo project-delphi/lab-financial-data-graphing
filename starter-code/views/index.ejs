@@ -8,5 +8,40 @@
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
   </body>
+ 
+  <div>
+    Filters 
+    <p>
+    From: <input type="date" name='from'>
+    To: <input type="date" name='to'>
+    </p>
+    Currency: 
+    <select>
+    <option value="USD">US Dollar</option>
+    <option value="EUR">Euro</option>
+    <option value="MXN">Mexican Peso</option>
+    <option value="GBP">British Pound</option>
+  </select>
+  </div>  
+
+<div>
+Values
+<p>
+Max:  
+Min:  
+</p>
+
+</div>
+  
+
+  <br>
+  <br>
+  <div style="width:75%;">
+    <canvas id="canvas"></canvas>
+  </div>
+  <br>
+  <br>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" charset="utf-8"></script>
   <script src="/javascripts/financial-data.js" charset="utf-8"></script>
 </html>
